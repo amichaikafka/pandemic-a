@@ -9,6 +9,7 @@ std::string Dispatcher::role(){
 }
 
 Player& Dispatcher::fly_direct(City city){
+    this->_location=city;
   
     return *this;
 }
