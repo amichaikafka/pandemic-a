@@ -94,7 +94,7 @@ ostream &pandemic::operator<<(ostream &out, const Board &b)
     for (auto &&i : b.medicine)
     {
         if(i.second){
-            out<<"Medicines for the illness: "<<i.first<<endl;
+            out<<"Medicines for the illness: "<<Colors_to_string[i.first]<<endl;
         }
         
     }
