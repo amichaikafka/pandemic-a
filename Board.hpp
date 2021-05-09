@@ -2,29 +2,28 @@
 #include "Color.hpp"
 #include "cityData.hpp"
 
-
 #include <map>
 #include <set>
 #include <iostream>
 
 using namespace std;
 
-namespace pandemic {
+namespace pandemic
+{
 
-    class Board {
+    class Board
+    {
 
-        private:
-            std::map<const City, cityData> gameMap;
+    public:
+        std::map<const City, cityData> gameMap;
+        Board();
 
-        public:
-            Board();
-                
-            
-            int& operator[](City c);
-            bool is_clean();
-            friend std::ostream& operator<<(std::ostream& out, const Board& b);
-            void remove_cures(){};
+        int &operator[](City city);
+        bool is_clean();
+        friend std::ostream &operator<<(std::ostream &out, const Board &b);
+        cityData get_cityData(City city);
+        std::map<Color, bool> medicine;
 
-            
+        void remove_cures(){};
     };
 }

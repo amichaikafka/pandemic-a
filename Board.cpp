@@ -58,7 +58,7 @@ Board::Board(){
 
 
 int& Board::operator[](City city) {
-return Board::gameMap[city].get_cubes();
+return Board::gameMap[city].cubes;
 
 }
 
@@ -68,6 +68,9 @@ bool Board::is_clean() {
 
 ostream& pandemic::operator<<(ostream& out, const Board& b){
     return out;
+}
+cityData Board::get_cityData(City city){
+    return Board::gameMap[city];
 }
     
 
