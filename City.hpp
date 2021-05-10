@@ -135,7 +135,7 @@ namespace pandemic {
             { London, {NewYork, Madrid, Essen, Paris } },
             { LosAngeles, {SanFrancisco, Chicago, MexicoCity, Sydney } },
             { Madrid, {London, NewYork, Paris, SaoPaulo, Algiers } },
-            { Manila, {Taipei, SanFrancisco, HoChiMinhCity, Sydney } },
+            { Manila, {Taipei, SanFrancisco, HoChiMinhCity, Sydney ,HongKong} },
             { MexicoCity, {LosAngeles, Chicago, Miami, Lima, Bogota } },
             { Miami, {Atlanta, MexicoCity, Washington, Bogota } },
             { Milan, {Essen, Paris, Istanbul } },
